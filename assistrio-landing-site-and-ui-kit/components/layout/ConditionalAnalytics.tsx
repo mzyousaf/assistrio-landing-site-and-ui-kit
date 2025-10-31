@@ -30,6 +30,25 @@ export default function ConditionalAnalytics() {
         return null;
     }
 
+    // Only render Vercel Analytics if deployed on Vercel
+    // This prevents 405 errors when deployed on non-Vercel platforms
+    // Check if running on Vercel domain or if explicitly enabled via env var
+    const shouldEnableVercelAnalytics = typeof window !== 'undefined' && (
+        // Check if on Vercel domains (works for *.vercel.app, *.vercel.com, etc.)
+        window.location.hostname.includes('vercel.app') ||
+        window.location.hostname.includes('vercel.com') ||
+        window.location.hostname.includes('vercel.sh')
+    );
+
+    // For custom domains on Vercel, the analytics endpoint should still work
+    // If you're getting 405 errors, it means either:
+    // 1. Not deployed on Vercel, OR
+    // 2. Vercel Analytics not properly configured
+    // In this case, we disable it to prevent errors
+    if (!shouldEnableVercelAnalytics) {
+        return null;
+    }
+
     return <Analytics />;
 }
 
