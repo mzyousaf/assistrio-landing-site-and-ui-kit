@@ -1,0 +1,132 @@
+/* Legal Pages Custom Styles */
+
+/* Enhanced prose styling for legal content */
+.prose h2 {
+    @apply text-2xl font-bold text-gray-900 dark:text-white mt-12 mb-6 pb-3 border-b border-gray-200 dark:border-slate-700;
+    scroll-margin-top: 6rem;
+}
+
+.prose h3 {
+    @apply text-xl font-semibold text-gray-800 dark:text-gray-200 mt-8 mb-4;
+    scroll-margin-top: 6rem;
+}
+
+.prose h4 {
+    @apply text-lg font-medium text-gray-700 dark:text-gray-300 mt-6 mb-3;
+}
+
+.prose p {
+    @apply text-gray-700 dark:text-gray-300 leading-relaxed mb-4;
+}
+
+.prose ul {
+    @apply space-y-2 mb-6;
+}
+
+.prose li {
+    @apply text-gray-700 dark:text-gray-200 leading-relaxed;
+}
+
+.prose strong {
+    @apply font-semibold text-gray-900 dark:text-white;
+}
+
+/* Enhanced list styling */
+.prose ul li {
+    @apply relative pl-6;
+}
+
+.prose ul li:not(:has(strong))::before {
+    content: "•";
+    @apply absolute left-0 text-brand-500 dark:text-brand-400 font-bold;
+}
+
+/* Nested list styling */
+.prose ul ul {
+    @apply mt-2 ml-4;
+}
+
+.prose ul ul li:not(:has(strong))::before {
+    content: "◦";
+    @apply text-brand-400 dark:text-brand-500;
+}
+
+/* Contact information styling - items with strong tags get special styling */
+.prose ul li:has(strong) {
+    @apply bg-gray-50 dark:bg-slate-800 p-3 rounded-lg border-l-4 border-brand-200 dark:border-brand-500;
+    list-style: none;
+    padding-left: 1rem;
+}
+
+/* Highlight important sections */
+.prose h2[id] {
+    @apply relative;
+}
+
+.prose h2[id]::before {
+    content: "";
+    @apply absolute -left-4 top-0 w-1 h-full bg-brand-500 rounded-full opacity-0 transition-opacity duration-200;
+}
+
+.prose h2[id]:hover::before {
+    @apply opacity-100;
+}
+
+/* Smooth scrolling for anchor links */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom scrollbar for table of contents */
+.legal-toc::-webkit-scrollbar {
+    width: 4px;
+}
+
+.legal-toc::-webkit-scrollbar-track {
+    @apply bg-gray-100 dark:bg-slate-800 rounded;
+}
+
+.legal-toc::-webkit-scrollbar-thumb {
+    @apply bg-gray-300 dark:bg-slate-600 rounded;
+}
+
+.legal-toc::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-400 dark:bg-slate-500;
+}
+
+/* Enhanced button styling */
+.back-to-top {
+    @apply fixed bottom-8 right-8 bg-brand-500 dark:bg-brand-600 hover:bg-brand-600 dark:hover:bg-brand-700 text-white p-3 rounded-full shadow-lg dark:shadow-brand-500/30 hover:shadow-xl dark:hover:shadow-brand-500/50 transition-all duration-200 z-50;
+}
+
+.back-to-top:hover {
+    @apply transform -translate-y-1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .prose h2 {
+        scroll-margin-top: 4rem;
+    }
+
+    .prose h3 {
+        scroll-margin-top: 4rem;
+    }
+}
+
+/* Print styles */
+@media print {
+
+    .legal-toc,
+    .back-to-top {
+        @apply hidden;
+    }
+
+    .prose h2 {
+        @apply break-inside-avoid;
+    }
+
+    .prose h3 {
+        @apply break-inside-avoid;
+    }
+}

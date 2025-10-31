@@ -1,0 +1,50 @@
+Additional Credits & Licenses
+========================================
+
+This project uses the following open-source libraries and tools:
+
+1. Next.js 15
+   - License: MIT
+   - Copyright (c) Vercel, Inc.
+   - https://nextjs.org/
+
+2. React 19
+   - License: MIT
+   - Copyright (c) Meta Platforms, Inc.
+   - https://react.dev/
+
+3. TypeScript
+   - License: Apache-2.0
+   - Copyright (c) Microsoft Corporation
+   - https://www.typescriptlang.org/
+
+4. Framer Motion
+   - License: MIT
+   - Copyright (c) Framer B.V.
+   - https://www.framer.com/motion/
+
+5. GSAP (GreenSock Animation Platform)
+   - License: Custom (GreenSock Standard License)
+   - Copyright (c) GreenSock, Inc.
+   - https://greensock.com/
+
+6. Lenis
+   - License: MIT
+   - Copyright (c) Darkroom
+   - https://lenis.studiofreight.com/
+
+7. React Icons
+   - License: MIT
+   - https://react-icons.github.io/react-icons/
+
+8. Vercel Analytics
+   - License: MIT
+   - Copyright (c) Vercel, Inc.
+   - https://vercel.com/analytics
+
+All images and icons used in the demo are for demonstration purposes only.
+Please replace them with your own assets for production use.
+
+For full license details of each package, please refer to their respective
+npm package.json files in node_modules/ or visit their official websites.
+

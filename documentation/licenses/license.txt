@@ -1,0 +1,67 @@
+========================================
+Envato Regular License
+========================================
+
+Copyright (c) 2025
+
+TERMS OF USE:
+This license covers the purchase and use of this item on Envato Market / ThemeForest.
+
+STANDARD LICENSE:
+1. You are allowed to:
+   - Use this item for personal or commercial projects
+   - Modify the code
+   - Create derivative works
+   - Charge end users for the use of your final product
+
+2. You are NOT allowed to:
+   - Resell the template as-is
+   - Distribute the source files
+   - Claim ownership of the design
+   - Remove copyright notices
+
+3. Extended License available for:
+   - SAAS products
+   - Multiple end-product sales
+   - Template distribution
+
+For full license details, visit:
+https://themeforest.net/licenses/standard
+
+For extended license, visit:
+https://themeforest.net/licenses/extended
+
+========================================
+Support & Contact
+========================================
+
+For support questions:
+- Check documentation in documentation/index.html
+- Contact through ThemeForest item support page
+
+========================================
+Credits
+========================================
+
+Built with:
+- Next.js 15
+- React 19
+- Tailwind CSS
+- Framer Motion
+- GSAP
+- Lenis
+
+Icons: Lucide React
+Fonts: Inter, Sora, Plus Jakarta Sans
+
+========================================
+Thank You!
+========================================
+
+Thank you for purchasing this template!
+
+We hope it helps you build amazing landing pages.
+
+Good luck with your projects!
+========================================
+

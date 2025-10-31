@@ -1,0 +1,7 @@
+Contact: support@assistrio.com
+Expires: 2025-12-31T23:59:59.000Z
+Encryption: https://assistrio.com/pgp-key.txt
+Preferred-Languages: en
+Canonical: https://assistrio.com/.well-known/security.txt
+Policy: https://assistrio.com
+
